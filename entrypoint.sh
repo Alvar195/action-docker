@@ -1,7 +1,6 @@
 #!/bin/sh -l
 
 mkdir zip
-mv -v node_modules zip/node_modules
-zip -r -j ./zip/packaged.zip dist/*
+zip -r -j ./zip/packaged.zip dist/* node_modules
 ls -la
 cd zip && ls -la
