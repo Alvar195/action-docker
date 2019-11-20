@@ -1,5 +1,6 @@
 #!/bin/sh -l
 
+mkdir zip
+zip -r ./zip/packaged.zip /dist
 ls -la
-
-echo "asd"
+cd zip && ls -la
