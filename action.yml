@@ -1,0 +1,16 @@
+name: 'zip folder'
+description: 'zip folder'
+inputs:
+  input-folder:
+    description: 'folder to zip'
+    required: true
+    default: 'dist'
+  output-folder:
+    description: 'folder to zip into'
+    required: true
+    default: 'zip'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{inputs.input-folder}}
